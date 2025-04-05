@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-searchbar: searchbar 0.3s ease-in-out forwards;
+  @keyframes searchbar {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+
+  --color-background-primary: #141414;
+
+  /* --breakpoint-xl: 1440px; */
+
+  --font-family-orbitron: "Orbitron", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background-primary);
+  color: white;
+  font-family: var(--font-family-orbitron);
+}

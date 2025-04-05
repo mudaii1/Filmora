@@ -1,0 +1,98 @@
+.slick-track {
+  transition: transform 0.3s cubic-bezier(0.23, 1, 0.32, 1) !important;
+}
+
+.slick-slide {
+  transition: opacity 0.3s ease;
+}
+
+.slick-slide > div {
+  margin: 0 8px;
+}
+
+@media (max-width: 768px) {
+  .slick-slide > div {
+    margin: 0 4px;
+  }
+}
+
+/* Custom Dots Styles */
+.slick-dots {
+  position: relative;
+}
+@media (max-width: 768px) {
+  .slick-dots {
+    display: none;
+  }
+}
+.slick-dots ul.category-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -70px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  width: fit-content;
+}
+.slick-dots ul.movies-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px !important;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  row-gap: 10px;
+  width: fit-content;
+}
+.slick-dots ul.reviews-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  row-gap: 10px;
+  width: fit-content;
+}
+@media (min-width: 768px) {
+  .slick-dots ul.movies-dots {
+    bottom: 40px;
+  }
+}
+
+.slick-dots li {
+  margin: 0 4px;
+  transition: all 0.3s ease;
+  width: 16px !important;
+  height: 4px !important;
+  border-radius: 4px !important;
+  background: rgba(255, 255, 255, 0.3) !important;
+  cursor: pointer !important;
+}
+.slick-dots li:hover {
+  background: red !important;
+}
+.slick-dots li div:before {
+  content: "";
+  width: 8px !important;
+  height: 8px !important;
+  background: rgba(255, 255, 255, 0.3) !important;
+  border-radius: 4px !important;
+  transition: all 0.3s ease !important;
+  opacity: 1 !important;
+}
+
+.slick-dots li.slick-active {
+  width: 24px !important;
+  background: red !important;
+}
